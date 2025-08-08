@@ -1,17 +1,15 @@
 {
+  "homepage": "https://muzammiltamboli.github.io/arsh-enterprises-website-2",
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://muzammiltmaboli.github.io/arsh-enterprises-website",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",

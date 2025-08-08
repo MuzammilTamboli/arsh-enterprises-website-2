@@ -21,7 +21,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex items-center">
               <div className="w-10 h-10 mr-3">
-                <img src="/logo.jpg" alt="Company Logo" className="w-10 h-10 object-contain" />
+                <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Company Logo" className="w-10 h-10 object-contain" />
               </div>
               <div>
                 <div className="text-2xl font-bold text-sky-600">ARSH</div>

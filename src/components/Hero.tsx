@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <img 
-          src="/1194650.jpg?auto=compress&cs=tinysrgb&w=1200" 
+          src={`${import.meta.env.BASE_URL}1194650.jpg?auto=compress&cs=tinysrgb&w=1200`} 
           alt="Background pattern"
           className="w-full h-full object-cover"
         />
@@ -21,7 +21,7 @@ const Hero = () => {
             {/* Logo Section */}
             <div className="flex items-center mb-6">
               <div className="w-10 h-10 mr-3">
-                <img src="/logo.jpg" alt="Company Logo" className="w-10 h-10 object-contain" />
+                <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Company Logo" className="w-10 h-10 object-contain" />
               </div>
               <div>
                 <div className="text-3xl font-bold text-sky-600">ARSH</div>
@@ -73,7 +73,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden h-96 lg:h-[500px]">
               <img 
-                src="/image.jpg"  
+                src={`${import.meta.env.BASE_URL}image.jpg`}  
                 alt="AC technician repairing air conditioning unit"
                 className="w-full h-full object-cover"
               />

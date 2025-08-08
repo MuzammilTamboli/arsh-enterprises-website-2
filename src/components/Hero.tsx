@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, Wind } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -7,36 +7,35 @@ const Hero = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <img 
-          src="https://images.pexels.com/photos/32497161/pexels-photo-32497161.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+          src="/1194650.jpg?auto=compress&cs=tinysrgb&w=1200" 
           alt="Background pattern"
           className="w-full h-full object-cover"
         />
       </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          
           {/* Left Content */}
           <div>
             {/* Logo Section */}
             <div className="flex items-center mb-6">
-               <div className="w-10 h-10 mr-3">
+              <div className="w-10 h-10 mr-3">
                 <img src="/logo.jpg" alt="Company Logo" className="w-10 h-10 object-contain" />
               </div>
-
-              
               <div>
                 <div className="text-3xl font-bold text-sky-600">ARSH</div>
                 <div className="text-lg text-gray-600 -mt-1">ENTERPRISES</div>
               </div>
             </div>
-            
+
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Advanced AC & VRV/VRF{' '}
-              <span className="text-sky-600">Maintenance</span> Services
+              Advanced AC & VRV/VRF <span className="text-sky-600">Maintenance</span> Services
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Expert Technicians. Advanced VRV/VRF Systems. Fast Response. Affordable Pricing.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a
                 href="#contact-us"
@@ -74,7 +73,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden h-96 lg:h-[500px]">
               <img 
-                src="image.jpg?auto=compress&cs=tinysrgb&w=800" 
+                src="/image.jpg"  
                 alt="AC technician repairing air conditioning unit"
                 className="w-full h-full object-cover"
               />
@@ -84,13 +83,13 @@ const Hero = () => {
                 <p className="text-white/90">Professional technicians fixing your AC problems</p>
               </div>
             </div>
-            
-            {/* Floating Stats Card */}
+
+            {/* Floating Stats Cards */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
               <div className="text-2xl font-bold text-sky-600">500+</div>
               <div className="text-gray-600">Happy Customers</div>
             </div>
-            
+
             <div className="absolute -top-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
               <div className="text-2xl font-bold text-green-600">4.9★</div>
               <div className="text-gray-600">Customer Rating</div>

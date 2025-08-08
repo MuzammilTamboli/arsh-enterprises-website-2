@@ -64,7 +64,7 @@ const About = () => {
             {/* Team Photo */}
             <div className="relative rounded-2xl overflow-hidden mb-8 h-64">
               <img 
-                src="wireman-dissasembling-air-conditioner.jpg?auto=compress&cs=tinysrgb&w=800" 
+                src="/wireman-dissasembling-air-conditioner.jpg?auto=compress&cs=tinysrgb&w=800" 
                 alt="AC technician working on air conditioning unit"
                 className="w-full h-full object-cover"
               />

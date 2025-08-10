@@ -8,28 +8,28 @@ const Services = () => {
       title: 'AC Installation',
       description: 'Professional installation of split, window, and central AC units with proper sizing and placement for maximum efficiency.',
       features: ['Expert sizing consultation', 'Professional mounting', 'Electrical connections', 'Performance testing'],
-      image: '/1000_F_892132544_tzUmvATf9y8nC39MpFjU9X1q2eHASuMb.jpg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/3964236/pexels-photo-3964236.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: <Trash2 className="w-8 h-8" />,
       title: 'AC Uninstallation',
       description: 'Safe and careful removal of existing AC units with proper disposal of refrigerants and components.',
       features: ['Safe refrigerant removal', 'Careful unit dismounting', 'Eco-friendly disposal', 'Site cleanup'],
-      image: '/1000_F_444069912_6mVFG79SCdmddPdX815Og2rbqMxhP63d.jpg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/3949724/pexels-photo-3949724.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: 'AC Maintenance',
       description: 'Comprehensive maintenance services to keep your AC running efficiently and extend its lifespan.',
       features: ['Filter cleaning/replacement', 'Coil cleaning', 'Refrigerant check', 'Performance optimization'],
-      image: '/1000_F_288995567_tlJhRceJcPolVLyYyTAXRFPKjftZTYQD.jpg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/3964230/pexels-photo-3964230.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: <Wrench className="w-8 h-8" />,
       title: 'VRV/VRF Systems',
       description: 'Advanced Variable Refrigerant Volume/Flow systems for commercial buildings offering superior energy efficiency and zone control.',
       features: ['Multi-zone climate control', 'Energy-efficient operation', 'Simultaneous heating & cooling', 'Smart building integration'],
-      image: '/1000_F_387071119_NOOP2E7GBtThTfypGNjGwYeURy7xpcs3.jpg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/7688107/pexels-photo-7688107.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: <FileText className="w-8 h-8" />,
@@ -43,7 +43,7 @@ const Services = () => {
       title: 'Emergency Repairs',
       description: '24/7 emergency repair services for when your AC breaks down unexpectedly.',
       features: ['24/7 availability', 'Rapid response time', 'Diagnostic expertise', 'Quality parts guarantee'],
-      image: '/1000_F_365479512_bboDY2fesAvMaUn8IOqj98kt07bMfWB7.jpg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/3949728/pexels-photo-3949728.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
   ];
 
@@ -73,26 +73,26 @@ const Services = () => {
               </div>
               
               <div className="p-8">
-              <div className="flex items-center justify-center w-16 h-16 bg-sky-100 text-sky-600 rounded-lg mb-6 group-hover:bg-sky-600 group-hover:text-white transition-colors duration-300">
-                {service.icon}
-              </div>
+                <div className="flex items-center justify-center w-16 h-16 bg-sky-100 text-sky-600 rounded-lg mb-6 group-hover:bg-sky-600 group-hover:text-white transition-colors duration-300">
+                  {service.icon}
+                </div>
               
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">{service.title}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
               
-              <ul className="space-y-2 mb-6">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-700">
-                    <div className="w-2 h-2 bg-sky-600 rounded-full mr-3"></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+                <ul className="space-y-2 mb-6">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-gray-700">
+                      <div className="w-2 h-2 bg-sky-600 rounded-full mr-3"></div>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
 
-              <button className="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700 transition-colors duration-300">
-                Learn More
-                <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+                <button className="inline-flex items-center text-sky-600 font-semibold hover:text-sky-700 transition-colors duration-300">
+                  Learn More
+                  <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
               </div>
             </div>
           ))}

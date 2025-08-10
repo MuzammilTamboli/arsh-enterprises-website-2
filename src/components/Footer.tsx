@@ -40,8 +40,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
               <div className="w-10 h-10 mr-3">
-               <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Company Logo" className="w-10 h-10 object-contain mr-2" />
+               <img src={`${import.meta.env.BASE_URL}LOGO.jpg`} alt="Logo" />
               </div>
+
               <div>
                 <div className="text-2xl font-bold text-sky-400">ARSH</div>
                 <div className="text-sm text-gray-400 -mt-1">ENTERPRISES</div>

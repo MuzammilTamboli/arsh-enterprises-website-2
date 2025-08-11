@@ -8,42 +8,42 @@ const Services = () => {
       title: 'AC Installation',
       description: 'Professional installation of split, window, and central AC units with proper sizing and placement for maximum efficiency.',
       features: ['Expert sizing consultation', 'Professional mounting', 'Electrical connections', 'Performance testing'],
-      image: 'https://images.pexels.com/photos/3964236/pexels-photo-3964236.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: `${import.meta.env.BASE_URL}1000_F_288995567_tlJhRceJcPolVLyYyTAXRFPKjftZTYQD.jpg`
     },
     {
       icon: <Trash2 className="w-8 h-8" />,
       title: 'AC Uninstallation',
       description: 'Safe and careful removal of existing AC units with proper disposal of refrigerants and components.',
       features: ['Safe refrigerant removal', 'Careful unit dismounting', 'Eco-friendly disposal', 'Site cleanup'],
-      image: 'https://images.pexels.com/photos/3949724/pexels-photo-3949724.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: `${import.meta.env.BASE_URL}1000_F_444069912_6mVFG79SCdmddPdX815Og2rbqMxhP63d.jpg`
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: 'AC Maintenance',
       description: 'Comprehensive maintenance services to keep your AC running efficiently and extend its lifespan.',
       features: ['Filter cleaning/replacement', 'Coil cleaning', 'Refrigerant check', 'Performance optimization'],
-      image: 'https://images.pexels.com/photos/3964230/pexels-photo-3964230.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: `${import.meta.env.BASE_URL}1000_F_288995567_tlJhRceJcPolVLyYyTAXRFPKjftZTYQD.jpg`
     },
     {
       icon: <Wrench className="w-8 h-8" />,
       title: 'VRV/VRF Systems',
       description: 'Advanced Variable Refrigerant Volume/Flow systems for commercial buildings offering superior energy efficiency and zone control.',
       features: ['Multi-zone climate control', 'Energy-efficient operation', 'Simultaneous heating & cooling', 'Smart building integration'],
-      image: 'https://images.pexels.com/photos/7688107/pexels-photo-7688107.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: `${import.meta.env.BASE_URL}VRV.jpg`
     },
     {
       icon: <FileText className="w-8 h-8" />,
       title: 'Annual Service Contracts',
       description: 'Comprehensive yearly maintenance plans with priority service and discounted repairs.',
       features: ['Regular maintenance visits', 'Priority emergency service', '20% discount on repairs', 'Performance reports'],
-      image: 'https://images.pexels.com/photos/7979432/pexels-photo-7979432.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: `${import.meta.env.BASE_URL}image.jpg`
     },
     {
       icon: <AlertCircle className="w-8 h-8" />,
       title: 'Emergency Repairs',
       description: '24/7 emergency repair services for when your AC breaks down unexpectedly.',
       features: ['24/7 availability', 'Rapid response time', 'Diagnostic expertise', 'Quality parts guarantee'],
-      image: 'https://images.pexels.com/photos/3949728/pexels-photo-3949728.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: `${import.meta.env.BASE_URL}1000_F_365479512_bboDY2fesAvMaUn8IOqj98kt07bMfWB7.jpg`
     },
   ];
 

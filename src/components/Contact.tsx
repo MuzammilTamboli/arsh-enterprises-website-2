@@ -10,7 +10,9 @@ const Contact = () => {
     message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -25,15 +27,12 @@ const Contact = () => {
 
   return (
     <section id="contact-us" className="py-20 relative overflow-hidden">
-      {/* Futuristic Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
-      
-      {/* Animated Grid Pattern */}
+
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-grid-pattern animate-pulse"></div>
       </div>
-      
-      {/* Floating Geometric Shapes */}
+
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-20 blur-xl animate-float"></div>
         <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-30 blur-lg animate-float-delayed"></div>
@@ -41,7 +40,6 @@ const Contact = () => {
         <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full opacity-25 blur-xl animate-float"></div>
       </div>
 
-      {/* Glowing Lines */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-cyan-400 to-transparent opacity-30"></div>
         <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-purple-400 to-transparent opacity-40"></div>
@@ -140,7 +138,11 @@ const Contact = () => {
               {/* Logo in Contact Form */}
               <div className="flex items-center justify-center mb-6">
                 <div className="w-10 h-10 mr-3">
-                  <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Company Logo" className="w-full h-full object-contain" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}logo.jpg`}
+                    alt="Company Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <div className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">ARSH</div>
@@ -151,8 +153,7 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-white mb-6">Send us a message</h3>
 
               <div className="space-y-6">
-                {/* Form Fields */}
-                {/* ... rest of the form unchanged ... */}
+                {/* Full Name */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -169,7 +170,76 @@ const Contact = () => {
                       placeholder="Your full name"
                     />
                   </div>
-                  {/* rest of form unchanged */}
+
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-all duration-300 placeholder-gray-400"
+                      placeholder="Your email address"
+                    />
+                  </div>
+                </div>
+
+                {/* Phone & Service */}
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-all duration-300 placeholder-gray-400"
+                      placeholder="Your phone number"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="service" className="block text-sm font-medium text-gray-300 mb-2">
+                      Service Required
+                    </label>
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-all duration-300"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="AC Installation">AC Installation</option>
+                      <option value="AC Maintenance">AC Maintenance</option>
+                      <option value="AC Repair">AC Repair</option>
+                      <option value="VRV/VRF Systems">VRV/VRF Systems</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 transition-all duration-300 placeholder-gray-400"
+                    placeholder="Write your message here"
+                  ></textarea>
                 </div>
 
                 {/* Submit Button */}

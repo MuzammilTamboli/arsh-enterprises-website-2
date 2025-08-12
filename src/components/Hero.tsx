@@ -48,7 +48,7 @@ const Hero = () => {
                 href="tel:+918208699669"
                 className="inline-flex items-center px-8 py-4 border-2 border-sky-600 text-sky-600 rounded-lg hover:bg-sky-50 transition-colors duration-300 text-lg font-semibold"
               >
-                Call Emergency: 8446268484
+                Call Emergency: 8208699669
               </a>
             </div>
 

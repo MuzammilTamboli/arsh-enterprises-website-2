@@ -36,7 +36,7 @@ const Services = () => {
       title: 'Annual Service Contracts',
       description: 'Comprehensive yearly maintenance plans with priority service and discounted repairs.',
       features: ['Regular maintenance visits', 'Priority emergency service', '20% discount on repairs', 'Performance reports'],
-      image: `${import.meta.env.BASE_URL}image.jpg`
+      image: 'https://images.pexels.com/photos/7979432/pexels-photo-7979432.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: <AlertCircle className="w-8 h-8" />,

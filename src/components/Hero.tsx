@@ -73,7 +73,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden h-96 lg:h-[500px]">
               <img 
-                src={`${import.meta.env.BASE_URL} image.jpg`}  
+                src={`${import.meta.env.BASE_URL}image.jpg`}  
                 alt="AC technician repairing air conditioning unit"
                 className="w-full h-full object-cover"
               />
